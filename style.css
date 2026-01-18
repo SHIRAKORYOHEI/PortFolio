@@ -1,0 +1,119 @@
+﻿html,body {
+    overflow: hidden;
+    margin: 0;
+}
+header{
+    background: #008db7;
+    margin: 0;
+}
+body{
+    background-color: lightslategrey;
+    color: ghostwhite;
+}
+p{
+    color: #f5f5f5
+}
+h1 {
+    text-align: center;
+    font-size: 55px;
+    margin: 0 10px 10px;
+    color: #f5f5f5
+}
+h2{
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px 0;
+    font-size: 35px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery div p{
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.modal-content {
+    background-color: #708090;
+    padding: 20px;
+    border-radius: 8px;
+    width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.modal-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.dimmed{
+    opacity: 0.5;
+}
+
+.skill {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.skill h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 35px;
+}
+
+.skill-row {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    text-align: center;
+}
+
+.skill-unity, .skill-csharp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.skill-unity {
+    transform: translateX(-50px);
+}
+.introduction p{
+    font-size: 20px;
+}
+.container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+}
+.area {
+    scroll-snap-align: start;
+    height: 100vh;
+}
